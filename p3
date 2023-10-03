@@ -1,0 +1,20 @@
+web Application code:
+
+    @WebMethod(operationName = "num")
+    public double num(@WebParam(name = "n") double n) {
+        //TODO write your implementation code here: 
+        double f=1;
+        for(int i=1;i<=n;i++){
+            f=f*i;
+        }
+        return f;
+    }
+
+
+micro visual studio 2010 code of Button:
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            WebServiceReference1.factorialClient Client = new WebServiceReference1.factorialClient();
+            Label1.Text = "factorial of num" + Client.num(Convert.ToDouble(TextBox1.Text));
+        }
