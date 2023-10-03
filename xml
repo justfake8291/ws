@@ -1,0 +1,33 @@
+step1 : ASP.NET empty web application
+
+step2 : create web from 
+step3 : create AJAX enable wcf service - GreetingService.svc
+
+GreetingService.svc code:
+
+        [OperationContract]
+        public String Greeting()
+        {
+            return "Hello World!";
+        }
+
+web from code:
+
+<script language="javascript" type="text/javascript">
+        function showgreeting() {
+            GreetingService.Greeting(onSuccess);
+        }
+        function onSuccess(response) {
+            alert(response);
+        }
+    </script>
+
+
+<Services>
+          <asp:ServiceReference Path="~/GreetingService.svc" />
+</Services>
+
+<asp:Button ID="Button1" runat="server" Text="Button" OnClientClick="showgreeting(); return false;" />
+
+
+
