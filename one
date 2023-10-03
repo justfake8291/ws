@@ -1,0 +1,28 @@
+operator fuction:
+
+    @WebMethod(operationName = "factorial")
+    public Double factorial(@WebParam(name = "fact") double fact) {
+        double f=1;
+        for(int i=1;i<=fact;i++){
+            f=f*i;
+        }
+        return f;
+    }
+
+
+
+java code  :
+
+package pract2;
+import java.util.Scanner;
+public class Pract2 {
+    public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+System.out.print("Enter a number to find factorial : ");
+double n = scan.nextDouble();
+System.out.println(factorial(n));
+    }
+
+ //adrag add drop the oprater from the wdls lick you added in java new project(web service client)
+   
+}
