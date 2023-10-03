@@ -1,0 +1,51 @@
+netbeans-add-newproject-create web_application-add-Web_Services
+
+Web Service code:
+
+    @WebMethod(operationName = "ctf")
+    public Double ctf(@WebParam(name = "c") double c) {
+        double f=c*1.8+32;
+        return f;
+    }
+    @WebMethod(operationName = "ftc")
+    public Double ftc(@WebParam(name = "f") double f) {
+        double c=f*1.8+32;
+        return c;
+    }
+
+create one new java project:- add new Web Service client
+code:
+
+package pract11;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class Pract11 {
+   public static void main(String[] args) throws IOException {
+Double t;
+int ch;
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("1. Celcius to Fahreheit");
+System.out.println("2. Fahrenheit to celcius");
+System.out.println("Enter your Choice");
+
+ch=Integer.parseInt(br.readLine());
+
+System.out.println("Enter temperature");
+
+t=Double.parseDouble(br.readLine());
+
+if(ch==1)
+
+System.out.println("temperature in fahrenheit="+ctf(t));
+
+else
+
+System.out.println("Temperature in celcius="+ftc(t));
+   }
+
+   //scroll
+}
+
+
