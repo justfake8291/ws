@@ -1,0 +1,25 @@
+
+step 1 : create web Application
+
+step 2 : create enttiy class from databases -
+
+step 3 : jsf pages from  entity clasess
+
+step 4 : Restfull web service from  entity clasess
+
+
+sql query:
+
+CREATE TABLE Person (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    city VARCHAR(255)
+);
+
+
+
+INSERT INTO Person (ID ,name, city) VALUES (1,'Alice Smith', 'Los Angeles');
+INSERT INTO Person (ID ,name, city) VALUES (2,'Alice Smith', 'Los Angeles');
+INSERT INTO Person (ID ,name, city) VALUES (3,'Alice Smith', 'Los Angeles');
+INSERT INTO Person (ID ,name, city) VALUES (4,'Alice Smith', 'Los Angeles');
+INSERT INTO Person (ID ,name, city) VALUES (5,'Alice Smith', 'Los Angeles');
