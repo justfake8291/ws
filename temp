@@ -14,6 +14,9 @@ Web Service code:
     }
 
 create one new java project:- add new Web Service client
+
+
+
 code:
 
 package pract11;
@@ -45,7 +48,7 @@ else
 System.out.println("Temperature in celcius="+ftc(t));
    }
 
-   //scroll
+   //add(drag and drop) operaters method 
 }
 
 
